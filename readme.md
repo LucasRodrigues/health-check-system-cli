@@ -34,11 +34,18 @@ npm install -g health-check-system-cli
 ## Help
 
 ### Configuration File
-For configuration file structure [visit](https://github.com/LucasRodrigues/health-check-system/blob/master/readme.md#json-format)
+
+#### File
+
+Create a json file with this [file structure](https://github.com/LucasRodrigues/health-check-system/blob/master/readme.md#json-format)
+
+#### Url
+
+System will make a request type GET with expect result status code 200 and body with json format with [structure](https://github.com/LucasRodrigues/health-check-system/blob/master/readme.md#json-format)
 
 ### Error handling
 
-#### Archive
+#### File
 
 Create a javascript file with this content
 
@@ -54,3 +61,5 @@ module.exports = error
 ```
 
 #### Url
+
+System will make a request type POST to url configured with object with format[TO DO], and expected response with status code 200.
