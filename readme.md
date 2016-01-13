@@ -7,7 +7,9 @@ A client on command line to Health Check System (https://github.com/LucasRodrigu
 
 ## Install
 
+<pre>
 npm install -g health-check-system-cli
+</pre>
 
 ## Commands
 
