@@ -17,6 +17,19 @@ npm install -g health-check-system-cli
 
 ###
 
+## Examples
+
+### Get configuration from file and print result
+
+<pre>
+    healthCheckSystem -i /Documents/configuration.json -r
+</pre>
+
+### Get configuration from url and run file handler in case of error
+
+<pre>
+    healthCheckSystem -i https://mysite/configurations -e /Documents/errorHandler.js
+</pre>
 
 ## Help
 
