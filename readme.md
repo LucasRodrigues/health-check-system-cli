@@ -11,16 +11,21 @@ npm install -g health-check-system-cli
 
 ## Commands
 
-    -p --path   Path of configuration file
+    -i --input File or Url source of configuration file
     -r --prettyResult   Result in pretty format
-    -e --errorTreatPath  In case of bad health run file
-    
+    -e --errorHandler  File or Url to handle error on case of bad health
+
+###
+
+
 ## Help
 
 ### Configuration File
 For configuration file structure [visit](https://github.com/LucasRodrigues/health-check-system/blob/master/readme.md#json-format)
 
-### Treat File
+### Error handling
+
+#### Archive
 
 Create a javascript file with this content
 
@@ -34,3 +39,5 @@ function error(status) {
 
 module.exports = error
 ```
+
+#### Url

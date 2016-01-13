@@ -11,11 +11,11 @@ export default class Main {
   static init() {
     const commander = CommanderConfiguration.get();
 
-    if (commander.path) {
-      Process.do(commander.path)
+    if (commander.input) {
+      Process.do(commander.input)
         .then(result => {
           return Output.do(
-            commander.errorFilePath,
+            commander.errorHandler,
             result,
             commander.prettyResult
           );

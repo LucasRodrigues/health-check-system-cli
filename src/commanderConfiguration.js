@@ -5,16 +5,16 @@ export default class CommanderConfiguration {
   static get() {
     const version = '0.0.1';
     const parameterPath = {
-      name: '-p --path [path]',
-      description: 'Path of configuration file'
+      name: '-i --input [input]',
+      description: 'File or Url source of configuration file'
     };
     const parameterPrettyResult = {
       name: '-r --prettyResult',
       description: 'Result in pretty format'
     };
     const parameterFileCaseError = {
-      name: '-e --errorFilePath [errorFile]',
-      description: 'File to run case health is bad'
+      name: '-e --errorHandler [errorHandler]',
+      description: 'File or Url to handle error on case of bad health'
     };
 
     commander
